@@ -13,7 +13,7 @@ interface Props {
 
 const nameDay = "แมวสายฟ้า";
 const nameNight = "แมวสีทอง";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "Website ของ Pang";
 
 export default function Layout({ children, home }: Props): ReactElement {
   return (

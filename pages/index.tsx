@@ -22,6 +22,12 @@ export default function Home() {
           <a>Click Meow!</a>
         </Link>
       </h2>
+      <h2>
+        {" "}
+        <Link href="/learn-getstaticprops">
+          <a>GetStaticProps!</a>
+        </Link>
+      </h2>
     </Layout>
   );
 }
