@@ -28,6 +28,18 @@ export default function Home() {
           <a>GetStaticProps!</a>
         </Link>
       </h2>
+      <h2>
+        {" "}
+        <Link href="/learn-getinitialprops">
+          <a>GetInitailProps!</a>
+        </Link>
+      </h2>
+      <h2>
+        {" "}
+        <Link href="/fetching-swr">
+          <a>data fetchingด้วยSWR!</a>
+        </Link>
+      </h2>
     </Layout>
   );
 }
