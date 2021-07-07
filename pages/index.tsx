@@ -40,6 +40,12 @@ export default function Home() {
           <a>data fetchingด้วยSWR!</a>
         </Link>
       </h2>
+      <h2>
+        {" "}
+        <Link href="/javascript">
+          <a>javascript</a>
+        </Link>
+      </h2>
     </Layout>
   );
 }

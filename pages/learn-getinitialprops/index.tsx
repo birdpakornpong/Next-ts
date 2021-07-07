@@ -1,9 +1,75 @@
 import React, { ReactElement } from "react";
 import Link from "next/link";
+import get from "lodash/get";
 
 interface Props {}
 
 export default function Index({}: Props): ReactElement {
+  // simplearray
+  const trackingRequests = [
+    {
+      version: "9.6",
+      merchantId: "764764000003155",
+      uniqueTransactionCode: 1620267300736,
+      desc: "Code: HMO2021050609144832759, ",
+      amt: "000000700000",
+      currencyCode: "764",
+      paymentChannel: "123",
+      panCountry: "TH",
+      cardholderName: "test data 2",
+      cardholderEmail: "anusit.ix@gmail.com",
+      userDefined1: "HMO2021050609144832759",
+      agentCode: "BBL",
+      channelCode: "BANKCOUNTER",
+      paymentExpiry: "2021-05-07 23:59:59",
+      mobileNo: "0845149356",
+    },
+    {
+      version: "10.6",
+      merchantId: "764764000003155",
+      uniqueTransactionCode: 1620267300736,
+      desc: "Code: HMO2021050609144832759, ",
+      amt: "000000700000",
+      currencyCode: "764",
+      paymentChannel: "123",
+      panCountry: "TH",
+      cardholderName: "test data 2",
+      cardholderEmail: "anusit.ix@gmail.com",
+      userDefined1: "HMO2021050609144832759",
+      agentCode: "BBL",
+      channelCode: "BANKCOUNTER",
+      paymentExpiry: "2021-05-07 23:59:59",
+      mobileNo: "0845149356",
+    },
+    {
+      version: "11.6",
+      merchantId: "764764000003155",
+      uniqueTransactionCode: 1620267300736,
+      desc: "Code: HMO2021050609144832759, ",
+      amt: "000000700000",
+      currencyCode: "764",
+      paymentChannel: "123",
+      panCountry: "TH",
+      cardholderName: "test data 2",
+      cardholderEmail: "anusit.ix@gmail.com",
+      userDefined1: "HMO2021050609144832759",
+      agentCode: "BBL",
+      channelCode: "BANKCOUNTER",
+      paymentExpiry: "2021-05-07 23:59:59",
+      mobileNo: "0845149356",
+    },
+  ];
+
+  const [trackingRequest] =
+    trackingRequests && trackingRequests.length > 0
+      ? trackingRequests.slice().reverse()
+      : [];
+
+  console.log("trackingRequest: ", [trackingRequest]);
+
+  const invoice_no = get(trackingRequest, "uniqueTransactionCode");
+  console.log("invoice_no: ", invoice_no);
+
   const verhicelPerson = [
     { v: "car", name: "bird" },
     { v: "bike", name: "pang" },
