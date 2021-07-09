@@ -75,6 +75,7 @@ export default function Index({}: Props): ReactElement {
     { v: "bike", name: "pang" },
     { v: "airplane", name: "meow" },
   ];
+
   return (
     <div>
       <h1>getInitialProps</h1>
@@ -87,6 +88,17 @@ export default function Index({}: Props): ReactElement {
           </Link>
         </h1>
       ))}
+      <h3>
+        {" "}
+        <Link href="/learn-getinitialprops/usefetch">
+          <a>example Fetch</a>
+        </Link>
+      </h3>
+      <h3>
+        <Link href="/learn-getinitialprops/getinitialprops">
+          <a>example getinitialprops</a>
+        </Link>
+      </h3>
     </div>
   );
 }
