@@ -81,10 +81,114 @@ export default function index({}: Props): ReactElement {
   let someValueLength: number = (someValue as string).length;
   console.log("someValueLength :", someValueLength);
 
+  // Object assign
   var data = [{ key1: "val1" }, { key2: "val2" }],
     obj = Object.assign({}, ...data);
 
   console.log(obj);
+
+  // Omit
+  interface User {
+    firstName: string;
+    lastName: string;
+    uid: number;
+  }
+
+  type omitUser = Omit<User, "lastName" | "uid">;
+
+  interface Users {
+    [name: string]: number;
+  }
+  const usersBird: Users = {
+    pakornpong: 25,
+    pang: 24,
+  };
+  console.log("usersBird: ", usersBird.pakornpong);
+
+  const functionTwoParams = (a: number, b?: number) => {
+    if (b) {
+      return console.log("have b", b);
+    }
+    console.log("do't have b", a);
+  };
+  functionTwoParams(5);
+  functionTwoParams(7, 8);
+
+  interface Todo {
+    title: string;
+    description: string;
+  }
+  // Partial<Todo> บางส่วนของ interface Todo
+  function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {
+    return { ...todo, ...fieldsToUpdate };
+  }
+  const todo1 = {
+    title: "organize desk",
+    description: "clear clutter",
+  };
+  const todo2 = updateTodo(todo1, { description: "bird edit" });
+  console.log("todo2: ", todo2);
+
+  // Record
+  type CatName = "meow" | "accord" | "bull";
+  interface CatInfo {
+    age: number;
+    breed: string;
+  }
+
+  const cats: Record<CatName, CatInfo> = {
+    meow: { age: 35, breed: "persian" },
+    accord: { age: 35, breed: "persian" },
+    bull: { age: 35, breed: "persian" },
+  };
+  console.log("cat: ", cats);
+
+  // Pick
+  interface TodoPick {
+    title: string;
+    description: string;
+    completed: boolean;
+  }
+  type TodoPickInfo = Pick<TodoPick, "title" | "description">;
+
+  interface IData {
+    val1: number;
+    val2: string;
+  }
+  const objs = {} as IData;
+  console.log("objs", objs);
+  const obj2 = [] as Array<IData>;
+  console.log("objs2", obj2);
+
+  // QueryKey
+  interface GraphQLResponse<QueryKey extends string, ResponseType> {
+    data: {
+      [key in QueryKey]: ResponseType;
+    };
+  }
+  interface UserQuery {
+    username: string;
+    id: number;
+  }
+  type dataIdResponse = GraphQLResponse<"dataId", UserQuery>;
+  const dataIdResponseResult: dataIdResponse = {
+    data: {
+      dataId: {
+        //
+        id: 123,
+        username: "test",
+      },
+    },
+  };
+  type pangtestQuery = GraphQLResponse<"pangtest", UserQuery>;
+  const pangQuery: pangtestQuery = {
+    data: {
+      pangtest: {
+        id: 35,
+        username: "dbbb",
+      },
+    },
+  };
   return (
     <div>
       <h4>hn</h4>

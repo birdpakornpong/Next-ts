@@ -37,7 +37,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ```bash
 https://medium.com/@rennerwin/%E0%B8%A1%E0%B8%B2%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%88%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%81%E0%B8%95%E0%B8%81%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87-slice-%E0%B8%81%E0%B8%B1%E0%B8%9A-splice-%E0%B8%82%E0%B8%AD%E0%B8%87-array-%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%96%E0%B8%AD%E0%B8%B0-e2edc45b322d
-
+```
+## Typescript พื้นฐาน
+```bash
 https://medium.com/@boyisboyis/typescript-%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99-basic-types-796f4f1661a2
+```
+```bash
+https://www.babelcoder.com/blog/articles/typescript-data-types
 ```
 
