@@ -1,0 +1,42 @@
+export default [
+  {
+    id: 1,
+    first_name: "Thomas",
+    last_name: "Patterson",
+    email: "Thomas_sun@gmail.com",
+    gender: "Male",
+    age: 24,
+  },
+  {
+    id: 2,
+    first_name: "Stella",
+    last_name: "Boomber",
+    email: "stella_sun@gmail.com",
+    gender: "Famale",
+    age: 17,
+  },
+  {
+    id: 3,
+    first_name: "Betty",
+    last_name: "Palmer",
+    email: "Thomas_sun@gmail.com",
+    gender: "Male",
+    age: 10,
+  },
+  {
+    id: 5,
+    first_name: "Thomas",
+    last_name: "Patterson",
+    email: "Thomas_sun@gmail.com",
+    gender: "Famale",
+    age: 38,
+  },
+  {
+    id: 7,
+    first_name: "Thomas",
+    last_name: "Patterson",
+    email: "Thomas_sun@gmail.com",
+    gender: "Famale",
+    age: 60,
+  },
+];

@@ -39,6 +39,11 @@ export default function index({}: Props): ReactElement {
   };
   numberInput(5, 8, 9, 3);
 
+  // type Assertions
+  const trustMeThisIsNumber: number = "11" as unknown as number;
+  console.log("trustMeThisIsNumber: ", trustMeThisIsNumber);
+  const trustMeThisBoolean: boolean = "11" as unknown as boolean;
+  console.log("trustMeThisString", trustMeThisBoolean);
   return (
     <div>
       <h1>
