@@ -84,6 +84,16 @@ export default function index({}: Props): ReactElement {
   }, {});
   console.log("sumAvgAgeGrouping: ", sumAvgAgeGrouping);
 
+  const avgAgeMale = users.filter(isMale).map((user) => {
+    return user.age;
+  });
+  console.log("avgAgeMale: ", avgAgeMale);
+  const avgAgeMaleLast =
+    avgAgeMale.reduce((sum, age) => {
+      sum += age;
+      return sum;
+    }, 0) / avgAgeMale.length;
+  console.log("Avg: ", avgAgeMaleLast);
   return (
     <div>
       <h3>
