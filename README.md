@@ -46,3 +46,7 @@ https://medium.com/@boyisboyis/typescript-%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E
 https://www.babelcoder.com/blog/articles/typescript-data-types
 ```
 
+## Function Programming
+```bash
+https://medium.com/20scoops-cnx/back-to-the-basic-%E0%B8%81%E0%B8%B1%E0%B8%9A-functional-programing-%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%87-currying-%E0%B9%81%E0%B8%A5%E0%B8%B0-composition-48a909cc98a9
+```
