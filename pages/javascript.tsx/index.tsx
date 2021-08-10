@@ -76,11 +76,13 @@ const teamAvengersThree = [
 teamAvengersThree.splice(3, 1, "Ant-Man");
 console.log("spliceReplace = ", teamAvengersThree);
 // [ "Captain America", "Iron Man", "Thor", "Ant-Man", "Doctor Strange" ]
-
+const testData = " - ";
+const isShow = testData && testData !== " - ";
 export default function index({}: Props): ReactElement {
   return (
     <div>
-      <h1>Javascript</h1>
+      {isShow && <h1>Javascript</h1>}
+      <h3>Heelo</h3>
     </div>
   );
 }
